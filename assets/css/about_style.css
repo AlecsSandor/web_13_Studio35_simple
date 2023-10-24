@@ -1,0 +1,339 @@
+
+
+/*=============== HEAD TITLE ===============*/
+.head-title__subtitle {
+  position: absolute;
+  bottom: 3em;
+  width: 60%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Clarika-Pro-rg';
+  line-height: 1.9;
+  font-size: 1.2em;
+  bottom: 0;
+}
+
+.head-title__data-title_n_about {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2-5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  color: white;
+  font-family: 'Clarika-Pro-hvy';
+}
+
+/*=============== IMAGEGRID_ABOUT ===============*/
+.imagegrid__about__container {
+  padding-bottom: 4em;
+  padding-top: 10em;
+}
+
+/* Main CSS */
+.grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  margin: auto;
+  grid-auto-flow: dense;
+  max-width: 70%;
+
+}
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/*=============== TEAM_ABOUT ===============*/
+.team__container {
+  padding-bottom: 3em;
+  background-color: none;
+}
+
+.overlayAbout {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url('../img/studio35-team.png');
+  background-size: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.container__medium {
+  position: absolute;
+  background-color: none;
+}
+
+.rowA {
+  width: 100%;
+  padding-top: 10vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.team-cards {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.flex-col-a {
+  display: block;
+}
+
+.team-card {
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  text-align: left;
+  font-family: 'Clarika-Pro-rg';
+  padding: 2em;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.team-member {
+  float: left;
+  width: 33%;
+  position: relative;
+  height: 1em;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(0.7, 0, 0.3, 1);
+  z-index: 1;
+  opacity: 0.0;
+}
+
+.team-member:hover {
+  opacity: 1;
+}
+
+.h3-about {
+  font-family: 'Clarika-Pro-hvy';
+  padding-bottom: 2vh;
+  color: rgb(33, 33, 33);
+  font-size: 30px;
+}
+
+.title {
+  font-family: 'Clarika-Pro-rg';
+  padding-bottom: 2vh;
+  color:rgb(246, 170, 83);
+  font-size: 13px;
+}
+
+.p-about {
+  line-height:1.7rem;
+  color: rgb(33, 33, 33);
+  font-size: 15px;
+}
+
+/*=============== MISSION ===============*/
+.mission__container {
+  padding-bottom: 7em;
+}
+
+.flex-col-b {
+  width: 46%;
+}
+
+.h2__sub {
+  font-family: 'Clarika-Pro-rg';
+  color: white;
+}
+
+.p__sub {
+  font-family: 'Clarika-Pro-th';
+  padding-top: 3em;
+  color: white;
+}
+
+.missionGif {
+  cursor:none;
+  -webkit-user-drag: none;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 290px) {
+  .head-title__data-title_n_about {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+
+  .team__container {
+    height: 2300px;
+    overflow: hidden;
+  }
+
+  .h3-about {
+    font-size: 20px;
+  }
+  
+  .title {
+    font-size: 9px;
+  }
+  
+  .p-about {
+    font-size: 15px;
+  }
+ 
+}
+
+@media screen and (max-width: 500px) {
+
+  .head-title {
+    max-height: 75vh;
+    padding-top: 200px;
+  }
+
+  .head-title__subtitle {
+    font-size: 0.8em;
+    width: 100%;
+  }
+  .hd__container {
+    min-height: 700px;
+  }
+
+  .head-title__data-title_n_about {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+  .grid-wrapper {
+    display: block;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: auto;
+    grid-auto-flow:dense;
+    max-width: 100%;
+  }
+
+  .team-card {
+    max-height: 1000px;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (max-width: 770px) {
+
+  .head-title__data-title_n_about {
+    padding-top: -15vh;
+  }
+
+  .head-title__subtitle {
+    font-size: 1.0em;
+    width: 90%;
+  }
+
+  .team-cards {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-top: 15em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    cursor: auto;
+    opacity: 1;
+  }
+
+  .team-card {
+    max-height: 700px;
+    overflow-y: hidden;
+  }
+
+  .flex-col-b {
+    width: 90%;
+  }
+
+  .team__container {
+    padding-bottom: 1000px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1300px) {
+
+  .head-title__subtitle {
+    font-size: 1.0em;
+  }
+
+  .deleteImg {
+    display: none;
+   
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+
+  .head-title {
+    height: 948px;
+  }
+
+}
+
+@media screen and (max-height: 720px) {
+  .hd__container {
+    min-height: 500px;
+  }
+  .head-title__data-title_n_about {
+    display: none;
+  }
+}
+
+@media (max-height: 720px) and (max-width: 770px) {
+ 
+}

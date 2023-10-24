@@ -1,0 +1,147 @@
+
+
+/*=============== HEAD TITLE ===============*/
+.head-title__container {
+  position: relative;
+  height: calc(70vh - var(--header-height));
+  align-content: center;
+  background-color: none;
+  overflow: hidden;
+}
+
+.head-title__data-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2-5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  color: white;
+}
+
+/*=============== FORM ===============*/
+.form__container {
+  padding-bottom: 6rem;
+}
+
+form { 
+  width:50%; 
+  margin:50px auto; 
+}
+
+.feedback-input {
+  color:rgb(40, 40, 40);
+  font-family: 'Clarika-Pro-th';
+  font-weight:500;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: white;
+  transition: all 0.3s;
+  padding: 20px;
+  margin-bottom: 30px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { background-color: rgb(220, 216, 204); }
+
+textarea {
+  height: 250px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  background-color: white;
+  color: #131313;
+  border: none;
+  border-radius: 50px;
+  width: 170px;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Clarika-Pro-hvy';
+}
+[type="submit"]:hover { 
+  background-color: rgb(246, 170, 83); 
+  transition: background-color .3s, transform 1s;
+}
+
+.field-title {
+  color: white;
+  font-family: 'Clarika-Pro-hvy';
+  padding-bottom: 1rem;
+  font-size: 0.8em;
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .head-title {
+    max-height: 75vh;
+    padding-top: 200px;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (max-width: 770px) {
+
+  .head-title {
+    padding-top: 25vh;
+  }
+
+  form { 
+    width:80%; 
+    margin:50px auto; 
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1300px) {
+
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+
+  .head-title {
+    height: 948px;
+  }
+
+}
+
+@media screen and (max-height: 720px) {
+  
+}
+
+@media (max-height: 720px) and (max-width: 770px) {
+ 
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== JQUERY ===============-->
+        <script src="assets/js/jquery-3.6.3.min.js"></script>
+
+        <!--=============== LOADER ===============-->
+        <script src="assets/js/loader.js"></script>
+
+        <!--=============== MOMENTUM SCROLL ===============-->
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Studio</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container" id="nav">
+                <a href="index.html" class="nav__logo-left">STUDIO<span class="thirtyfive">35</span></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item" id="home-link">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="work.html" class="nav__link">Work
+                                <div class="nav-number">11</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Learning
+                                <div class="nav-number extern">⤴</div>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- 
+                    <div class="nav__dark">
+                         Theme change button 
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+                    -->
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <a href="contact.html" class="nav__logo-right"><span style="color: rgb(246, 170, 83);"> • </span> SHOOT WITH US <span style="color: rgb(246, 170, 83);"> • </span></a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="main">
+            <!--==================== LOADER ====================-->
+            <div class="loader">
+                <div class="loader__title">STUDIO35
+                    <div class="barContent">
+                        <div class="bar"> </div>
+                        <div class="bar"> </div>
+                        <div class="bar"> </div>
+                      </div>
+                </div>
+            </div>
+
+            <!--==================== LANDING ====================-->
+            <section class="landing" id="home">
+                <div class="noise"></div>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="side-text">Studio35 • Parsley No.5 • Vancouver, Canada</h1>
+                        <h1 class="home__data-title">Brand awareness to remember.</b></h1>
+                        <div class="video__container">
+                                <div class="video__content">
+                                    <video id="video-file" loop muted autoplay>
+                                        <source src="assets/video/video.mp4" id="landingVideo" type="video/mp4">
+                                    </video>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="home__data-subtitle">
+                        <a href="#about" id="por">SCROLL DOWN</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CIRCLE ====================-->
+            <div class="home-circle">
+                <svg height="912" viewBox="0 0 904 912" width="904" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+                        <circle cx="451" cy="450" r="450" stroke="#e89e4a" stroke-width="2" />
+                        <g fill="#191919" transform="matrix(1 0 0 -1 0 911)">
+                            <path d="m0 0h904v199h-904z" />
+                            <path d="m0 200h904v15h-904z" />
+                            <path d="m0 217h904v15h-904z" />
+                            <path d="m0 279h904v15h-904z" />
+                            <path d="m0 236h904v15h-904z" />
+                            <path d="m0 302h904v15h-904z" />
+                            <path d="m0 256h904v15h-904z" />
+                            <path d="m0 328h904v15h-904z" />
+                            <path d="m0 354h904v15h-904z" />
+                            <path d="m0 383h904v15h-904z" />
+                            <path d="m0 413h904v15h-904z" />
+                            <path d="m0 445h904v15h-904z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!--==================== WORK ====================-->
+            <section class="work section" id="about">
+                <div class="work__container container">
+                    <h1 class="work__subtitle">WE ARE STUDIO35</h1>
+                    <div class="work__subtitle-text">
+                        <p>Closing the gap between message and perception with <span style="color: rgb(246, 170, 83);">visual communication</span>, compelling stories, and memorable cinematography.</p>
+                    </div>
+                    <div class="video-row">
+
+                        <div class="discover__container container swiper-container">
+                            <div class="swiper-wrapper">
+                                <!--==================== DISCOVER 1 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Freeway Sides</h2>
+                                        <span class="discover__description">Video reels and promo</span>
+                                    </div>
+                                </div>
+        
+                                <!--==================== DISCOVER 2 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Distances</h2>
+                                        <span class="discover__description">Four sides</span>
+                                    </div>
+                                </div>
+        
+                                <!--==================== DISCOVER 3 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Woven and Fabrics</h2>
+                                        <span class="discover__description">Reels and Media</span>
+                                    </div>
+                                </div>
+        
+                                <!--==================== DISCOVER 4 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Blue Skies</h2>
+                                        <span class="discover__description">Social Media Shorts</span>
+                                    </div>
+                                </div>
+                                <!--==================== DISCOVER 5 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover5.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Trail under the Sun</h2>
+                                        <span class="discover__description">Photography</span>
+                                    </div>
+                                </div>
+        
+                                <!--==================== DISCOVER 6 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover6.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Clark and Co.</h2>
+                                        <span class="discover__description">Social Media</span>
+                                    </div>
+                                </div>
+                                <!--==================== DISCOVER 7 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover7.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Blue Moon Travel</h2>
+                                        <span class="discover__description">Commercial Advertising</span>
+                                    </div>
+                                </div>
+        
+                                <!--==================== DISCOVER 8 ====================-->
+                                <div class="discover__card swiper-slide">
+                                    <img src="assets/img/discover8.jpg" alt="" class="discover__img">
+                                    <div class="discover__data">
+                                        <h2 class="discover__title">Lightway</h2>
+                                        <span class="discover__description">Product Videos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="CTA-row">
+                        <a href="work.html">
+                            <div class="button CTA">ALL WORK</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CLIENTS ====================-->
+            <section class="clients section" id="about">
+                <div class="clients__container container">
+                    <h1 class="rowd clients__subtitle">SELECT CLIENTS</h1>
+                    <div class="rowd">
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/adidas.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/adobe.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/amazon.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/apple-music.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/atlassian.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/cloudflare.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/ember.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/kickstarter.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/netflix.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                        <li class="lid">
+                            <div class="single-logo">
+                                <img src="assets/img/vans.png" alt="" class="brand__img">
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TEAM ====================-->
+            <section class="team section">
+                <div class="team__container container">
+                    <h1 class="h1__sub" >SMALL TEAM. BIG IMPACT.</h1>
+                    <h1 class="h2__sub">A handful of <span style="color: rgb(246, 170, 83);">professionals.</span> Check us out.</h1>
+                    <a href="about.html" class="btn white">
+                        <div class="btn-wrap">
+                            <div class="button CTA btn-About">ABOUT US</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="overlay"></div>
+            </section>
+
+            <!--==================== DESCRIPTION ====================-->
+            <section class="description section" id="about">
+                <div class="description__container container">
+                    <div class="rowt title-col">
+                        <div class="flex-colt">To produce solutions that have an effect, we work together with brands and agencies.</div>
+                    </div>
+                    <div class="service-row">
+                        <div class="flex-colt">
+                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>user-focus</title>
+                                <g id="V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="3.1.About" transform="translate(-185.000000, -2704.000000)" stroke="#E89E4A" stroke-width="1.25">
+                                        <g id="user-focus" transform="translate(186.000000, 2705.000000)">
+                                            <polyline id="Path" points="24 4.8 24 0 19.2 0"></polyline>
+                                            <polyline id="Path" points="0 19.2 0 24 4.8 24"></polyline>
+                                            <polyline id="Path" points="19.2 24 24 24 24 19.2"></polyline>
+                                            <circle id="Oval" cx="12" cy="7.8" r="3.6"></circle>
+                                            <polygon id="Path" points="4.8 18.6 4.8 16.8 8.4 13.8 12 15 15.6 13.8 19.2 16.8 19.2 18.6"></polygon>
+                                            <polyline id="Path" points="4.8 0 0 0 0 4.8"></polyline>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="description__subtitle" >Idea</div>
+                            <p class="descr">From the initial concept to the final execution, we deliver the best possible results.</p>
+                        </div>
+                        <div class="flex-colt">
+                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>film</title>
+                                <g id="V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="3.1.About" transform="translate(-559.000000, -2714.000000)" stroke="#E89E4A" stroke-width="1.25">
+                                        <g id="film" transform="translate(560.000000, 2715.000000)">
+                                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                            <line x1="6" y1="0" x2="6" y2="24" id="Path"></line>
+                                            <line x1="18" y1="0" x2="18" y2="24" id="Path"></line>
+                                            <line x1="0" y1="12" x2="24" y2="12" id="Path"></line>
+                                            <line x1="0" y1="6" x2="6" y2="6" id="Path"></line>
+                                            <line x1="0" y1="18" x2="6" y2="18" id="Path"></line>
+                                            <line x1="18" y1="18" x2="24" y2="18" id="Path"></line>
+                                            <line x1="18" y1="6" x2="24" y2="6" id="Path"></line>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="description__subtitle">Production</div>
+                            <p class="descr">You will find out exactly what to look for in your new video ad and why you should hire us.</p>
+                        </div>
+                        <div class="flex-colt">
+                            <svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>movieclip</title>
+                                <g id="V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="3.1.About" transform="translate(-939.000000, -2714.000000)" stroke="#E89E4A" stroke-width="1.25">
+                                        <g id="movieclip" transform="translate(940.000000, 2715.000000)">
+                                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                            <polygon id="Path" points="10 16 10 12.6666667 12.88 14.3333333 15.7733333 16 12.88 17.6666667 10 19.3333333"></polygon>
+                                            <line x1="24" y1="8" x2="0" y2="8" id="Path"></line>
+                                            <line x1="21.3333333" y1="8" x2="16" y2="0" id="Path"></line>
+                                            <line x1="8" y1="8" x2="2.66666667" y2="0" id="Path"></line>
+                                            <line x1="14.6666667" y1="8" x2="9.33333333" y2="0" id="Path"></line>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div class="description__subtitle">Result</div>
+                            <p class="descr">A great process produces amazing outcomes and we are prone to be successful in this game.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== BREAK ====================-->
+            <section class="break">
+                <div class="CTA__container container">
+                    <a href="contact.html" class="btn secondBtn">
+                        <div class="btn-wrap2">
+                            <div class="button CTA btn-Shoot">SHOOT WITH US</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-cover">
+                    <video src="assets/video/video2.mp4" autoplay="" loop="" muted="" playsinline="" uk-cover="" class="video-cover-vid"></video>
+                </div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+
+                  
+                        <div class="rowf top-footer">
+                            <div class="flexf-col" id="flexf-1">
+                                <div class="footer-image">
+                                    <a href="index.html" class="nav__logo-left">STUDIO35</a>
+                                </div>
+                            </div>
+                            <div class="flexf-col" id="flexf-2">
+                                <h2 class="h2Foot">Contact us</h2>
+                                <div class="footer-links">
+                                    <ul>
+                                        <h4 class="h4Foot">Sitemap</h4>
+                                        <li class="liFoot"><a href="index.html" style="color:rgb(57, 57, 57);">Home</a></li>
+                                        <li class="liFoot"><a href="work.html" style="color:rgb(57, 57, 57);">Work</a></li>
+                                        <li class="liFoot"><a href="about.html" style="color:rgb(57, 57, 57);">About</a></li>
+                                        <li class="liFoot"><a href="contact.html" style="color:rgb(57, 57, 57);">Contact</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4 class="h4Foot">Socials</h4>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">Instagram</a></li>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">Vimeo</a></li>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">Facebook</a></li>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">Youtube</a></li>
+                                    </ul>
+                                    <ul>
+                                        <h4 class="h4Foot">Contact</h4>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">mail.studiothirtyfive.studio</a></li>
+                                        <li class="liFoot"><a href="#" style="color:rgb(57, 57, 57);">1378371087</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rowf bottom-footer">
+                            <div class="small">© 2022 Studio35<br>Code by Alex Sandor<br>
+                                <a href="https://www.veswip.com">www.veswip.com</a>
+                            </div>
+                        </div>
+                   
+
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,354 @@
+
+
+strong {
+  font-family: 'Clarika-Pro-hvy';
+}
+/*=============== HEAD TITLE ===============*/
+.head-title__container {
+  position: relative;
+  height: calc(70vh - var(--header-height));
+  align-content: center;
+  background-color: none;
+  overflow: hidden;
+}
+
+.head-title__data-title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2-5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  color: white;
+}
+
+/*=============== DETAILS ===============*/
+.flex-col {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+/*=============== VIDEOVIMEO ============*/
+.videoVimeo__container {
+  text-align: center;
+  padding-top: 4em;
+ 
+}
+
+.videoWrapper {
+  margin: auto;
+  height: 600px;
+}
+
+.videoFile {
+  width: 100%;
+  height: 100%;
+}
+
+/*=============== SOMETEXT ============*/
+.textWrapper {
+  margin: auto;
+  text-align: center;
+  line-height: 2em;
+  width: 60%;
+}
+
+/*=============== SOMEIMAGEGRID ============*/
+.someImageGrid__container {
+  text-align: center;
+}
+
+.uldRow {
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.uldWrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.single-flex-image {
+  width: 31%;
+  margin-right: 2em;
+  margin: auto;
+}
+
+.single-flex-image-two {
+  width: 100%;
+  margin-right: 2em;
+  margin: auto;
+}
+
+/*=============== IMAGEGRID ===============*/
+.imagegrid__container {
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.wrapper {
+  background: none;
+  font-family: 'Clarika-Pro-rg';
+  color: #fff;
+}
+
+.row {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.row:last-child {
+  margin-bottom: 0px;
+}
+
+.row .containerFor {
+  width: 48%;
+  min-width: 450px;
+  max-width: 950px;
+}
+
+.row img {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.row .caption {
+  cursor: pointer;
+}
+
+.row h2 {
+  font-family: "Clarika-Pro-hvy";
+  display: inline;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+.row p {
+  display: inline;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-family: "Clarika-Pro-th";
+  color: white;
+}
+
+@media only screen and (min-width: 1700px) {
+  .row {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .row {
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-direction: column;
+  }
+
+  .row .containerFor {
+      width: 100%;
+      min-width: 650px;
+      margin: 40px 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .row {
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-direction: column;
+  }
+
+  .containerFor{
+      margin: 210px 0;
+  }
+
+  .row .containerFor {
+      min-width: 450px;
+  }
+
+  .effect6 .caption h2 {
+      font-size: 30px !important;
+  }
+
+  .effect6 .caption p {
+      font-size: 12px !important;
+  }
+}
+
+
+
+/* === Effect 6 === */
+.effect6 {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Images */
+.effect6:hover .firstImg {
+  animation-name: scaleImg;
+  animation-duration: .7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes scaleImg {
+  0% {
+      transform: scale(1);
+  }
+
+  30% {
+      transform: scale(1.2);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.effect6 .secondImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .7s;
+}
+
+.effect6:hover .secondImg {
+  opacity: 1;
+  animation-name: scaleImg;
+  animation-duration: .7s;
+  animation-fill-mode: backwards;
+}
+
+/* Text */
+.effect6 .caption h2 {
+  text-align: left;
+  font-size: 40px;
+  position: absolute;
+  left: 1em;
+  width: 50%;
+  top: 30px;
+  transition: top 1.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.effect6 .caption p {
+  text-align: left;
+  font-size: 15px;
+  position: absolute;
+  bottom: -180px;
+  left: 3em;
+  transition: bottom 1.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.effect6:hover .caption h2 {
+  top: 25%;
+}
+
+.effect6:hover .caption p {
+  bottom: 30%;
+}
+
+
+
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .videoFile {
+    max-width: 100px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .head-title {
+    max-height: 75vh;
+    padding-top: 200px;
+  }
+
+  .videoWrapper {
+    height: 100px;
+  }
+
+  .videoVimeo__container {
+    padding-top: 1em;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (max-width: 770px) {
+
+  .head-title {
+    padding-top: 25vh;
+  }
+
+  .textWrapper {
+    width: 100%;
+  }
+
+  .uldWrapper {
+    width: 100%;
+  }
+
+  .videoVimeo__container {
+    padding-top: 0em;
+  }
+  
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 1300px) {
+  .videoWrapper {
+    height: 400px;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+
+  .head-title {
+    height: 948px;
+  }
+
+}
+
+@media screen and (max-height: 720px) {
+  
+}
+
+@media (max-height: 720px) and (max-width: 770px) {
+ 
+}
